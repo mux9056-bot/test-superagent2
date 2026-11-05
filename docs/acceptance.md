@@ -12,8 +12,8 @@
 - 自动化命令：
   - `npm run check` — 内容校验
   - `npm test` — 43 项单元与集成测试
-  - `npm run build && npm run verify` — 153 项构建产物检查
-  - `npm run browser-check` — 108 项浏览器检查，并生成 `docs/screenshots/`
+  - `npm run build && npm run verify` — 154 项构建产物检查
+  - `npm run browser-check` — 109 项浏览器检查，并生成 `docs/screenshots/`
   - `npm run lighthouse` — 移动端 Lighthouse，连续 3 次取中位数，结果写入 `docs/lighthouse.json`
 
 ## 验收结果

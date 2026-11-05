@@ -175,6 +175,7 @@ for (const tag of tags) {
     Boolean(page && page.includes(`共 ${tag.count} 篇文章`)),
   );
 }
+check('不存在的标签没有生成页面', !fs.existsSync(path.join(outDir, 'tags/不存在的标签/index.html')));
 
 const aboutPage = read('about/index.html');
 check('关于页存在', Boolean(aboutPage));

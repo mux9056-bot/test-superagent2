@@ -209,6 +209,9 @@ try {
   const tagResponse = await fetch(`${baseUrl}${pages.tag}`);
   check('中文标签路径可访问', tagResponse.status === 200, `HTTP ${tagResponse.status}`);
 
+  const missingTagResponse = await fetch(`${baseUrl}${site.base}${encodeURI('/tags/不存在的标签/')}`);
+  check('不存在的标签返回 HTTP 404', missingTagResponse.status === 404, `HTTP ${missingTagResponse.status}`);
+
   const rssResponse = await fetch(`${baseUrl}/rss.xml`);
   check('RSS 以 XML 返回', rssResponse.status === 200 && (rssResponse.headers.get('content-type') || '').includes('xml'));
 
