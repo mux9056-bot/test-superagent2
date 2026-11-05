@@ -1,0 +1,70 @@
+{
+  "url": "http://127.0.0.1:4400",
+  "date": "2026-11-05T04:17:38.110Z",
+  "environment": {
+    "platform": "darwin 25.6.0 (arm64)",
+    "chrome": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "formFactor": "mobile（Lighthouse 默认移动端配置）",
+    "runs": 3
+  },
+  "pages": {
+    "home": {
+      "path": "/",
+      "scores": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    },
+    "article": {
+      "path": "/posts/why-i-write-again/",
+      "scores": [
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        }
+      ],
+      "median": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      }
+    }
+  }
+}
