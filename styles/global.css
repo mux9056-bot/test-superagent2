@@ -133,6 +133,16 @@ a:hover {
   color: red;
 }
 
+.site-phone {
+  display: inline-block;
+  margin-left: 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  vertical-align: baseline;
+}
+
 .site-tagline {
   margin: 0.45rem 0 0;
   color: var(--text-muted);

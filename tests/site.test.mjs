@@ -122,6 +122,26 @@ test('预览构建包含草稿并在页面上标记', () => {
   }
 });
 
+test('首页站名后展示电话，其他页面不展示', () => {
+  const build = buildProject();
+  try {
+    const home = build.read('index.html');
+    assert.match(home, />我的博客<\/a><span class="site-phone">18888888888<\/span>/);
+    assert.match(build.read('page/2/index.html'), /18888888888/);
+    for (const page of [
+      'posts/why-i-write-again/index.html',
+      'archives/index.html',
+      'tags/index.html',
+      'about/index.html',
+      '404.html',
+    ]) {
+      assert.doesNotMatch(build.read(page), /18888888888/, page);
+    }
+  } finally {
+    build.cleanup();
+  }
+});
+
 test('配置 base 时所有地址都带子路径', () => {
   const root = fs.mkdtempSync(path.join(projectRoot, '.test-build-'));
   try {

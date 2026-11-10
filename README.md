@@ -53,6 +53,7 @@ npx playwright install chromium webkit
 | `name` | 站名，显示在页头、标题和页脚 |
 | `author` | 作者昵称，用于关于页描述 |
 | `description` | 一句话介绍，显示在页头并作为默认描述 |
+| `phone` | 首页站名后展示的联系电话；留空则不展示 |
 | `url` | 正式域名，用于 canonical、RSS、站点地图和分享图 |
 | `base` | 部署在子路径时使用，例如 GitHub Pages 项目站点的 `/仓库名`；根域名留空 |
 | `socials` | 公开的联系方式，数组项为 `{ label, url }`；留空则不展示 |
