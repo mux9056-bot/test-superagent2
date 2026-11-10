@@ -128,6 +128,11 @@ a:hover {
   text-underline-offset: 0.18em;
 }
 
+.site-name--home,
+.site-name--home:hover {
+  color: red;
+}
+
 .site-tagline {
   margin: 0.45rem 0 0;
   color: var(--text-muted);
