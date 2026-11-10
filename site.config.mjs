@@ -19,7 +19,7 @@ function normalizeBase(value) {
 }
 
 export const site = {
-  name: '我的博客',
+  name: 'My Blog',
   author: '博主',
   description: '记录生活随笔与个人介绍的个人博客。',
   // 首页站名后展示的联系电话；留空则不展示。
