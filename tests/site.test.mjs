@@ -126,7 +126,7 @@ test('首页站名后展示电话，其他页面不展示', () => {
   const build = buildProject();
   try {
     const home = build.read('index.html');
-    assert.match(home, />我的博客<\/a><span class="site-phone">18888888888<\/span>/);
+    assert.match(home, />My Blog<\/a><span class="site-phone">18888888888<\/span>/);
     assert.match(build.read('page/2/index.html'), /18888888888/);
     for (const page of [
       'posts/why-i-write-again/index.html',
